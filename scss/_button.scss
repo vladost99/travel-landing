@@ -1,0 +1,31 @@
+.btn {
+    height: 44px;
+    width: 132px;
+    border-radius: 8px;
+    border: 1px solid #FB8F1D;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: .5s;
+    color: #fff;
+    cursor: pointer;
+
+    &_standart-color {
+        color:  #FB8F1D;
+    }
+    
+    &_primary {
+        background: #FB8F1D;
+    }
+
+    &_margin-right {
+        margin-right: 18px;
+    }
+    &:hover {
+        background: #FB8F1D;
+        color: #fff;
+
+    }
+    &_margin-top {
+        margin-top: 35px;
+    }
+}

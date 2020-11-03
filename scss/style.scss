@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+}
+.container {
+    max-width: 1415px;
+    margin: 0 auto;
+}
+@import 'button';
+@import 'title';
+
+@import 'blocks/header';
+@import 'blocks/exploreTravel';
+@import 'blocks/section';
+@import 'blocks/featured';
+@import 'blocks/testimonials';
+@import 'blocks/stories';
+@import 'blocks/footer';

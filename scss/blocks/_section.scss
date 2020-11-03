@@ -1,0 +1,44 @@
+.explore-world {
+    padding-top: 286px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-block {
+    height: 534px;
+    max-width: 659px;
+    margin-right: 100px;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    &__title {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        max-width: 450px;
+        font-family: Mulish;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}

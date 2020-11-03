@@ -1,0 +1,113 @@
+.testimonials-block {
+    padding-top: 358px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    &__info {
+        align-self: center;
+    }
+    &__text {
+        font-family: Mulish;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        max-width: 450px;
+        margin-bottom: 40px;
+
+    }
+
+    &__img {
+        max-width: 773px;
+        height: 598px;
+        position: relative;
+        margin-right: 20px;
+        &::before {
+            content: url('../../img/element2.png');
+            position: absolute;
+            right: -5px;
+            top: -15px;
+            width: 25px;
+            height: 25px;
+        }
+        &::after {
+            content: url('../../img/element.png');
+            position: absolute;
+            left: -15px;
+            bottom: -4px;
+            width: 25px;
+            height: 25px;
+        }
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            height: 100%;
+            position: relative;
+        }
+    }
+}
+
+.slider {
+    background: #fff;
+    width: 132px;
+    height: 60px;
+    position: absolute;
+    border-top-left-radius: 10px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .slider-wrap {
+        display: flex;
+        justify-content: space-between;
+        .arrow {
+           i {
+            cursor: pointer;
+           }
+        }
+        .arrow-left {
+            margin-right: 15px;
+           
+        }
+    }
+}
+
+.star-block {
+    margin-bottom: 30px;
+    .star {
+        margin-right: 10px;
+    }
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+        margin-bottom: 10px;
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    &__company {
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}
