@@ -1,5 +1,8 @@
 .section-header {
    padding-top: 43px; 
+   position: relative;
+   z-index: 10;
+  
 }
 
 .header {
@@ -16,6 +19,7 @@
 }
 
 .nav {
+    
     display: flex;
     &__list {
         display: flex;
@@ -41,5 +45,84 @@
         color: #B8BECD;
     }
 
+
+}
+
+@media screen and (max-width: 992px) {
+    .nav {
+        &__link {
+            text-decoration: none;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 19px;
+            color: #B8BECD;
+        }
+    
+    
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .header-btn {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .section-header {
+       width: 100%;
+       position: fixed;
+       padding: 0;
+       top: 0px;
+       background: #fff;
+       -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 15px 0px 14px 8px rgba(0,0,0,0.18); 
+        box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 15px 0px 14px 8px rgba(0,0,0,0.18);
+     }
+
+
+     .header {
+        &__logo {
+            align-self: center; 
+        }
+    }
+    .nav {  
+        position: absolute;
+        top: 87px;
+        left: -100%;
+        background: #1F87FF;
+        width: 100%;
+        min-height: 100%;  
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .5s;
+        &__list {
+           flex-direction: column;
+        }
+        &__item {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+
+        &__item:nth-child(1){
+            .nav__link {
+               margin-right: 0;
+            }
+        }
+        &__link {
+            text-decoration: none;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 19px;
+            color: #B8BECD;
+       }
+    }
+    .nav.active {
+        left: 0;
+        transition: .5s;
+    }
 
 }

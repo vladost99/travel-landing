@@ -5,6 +5,7 @@
 .wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 0 30px;
 }
 
 .img-block {
@@ -40,5 +41,12 @@
         letter-spacing: 0em;
         text-align: left;
 
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .wrapper {
+        flex-direction: column;
     }
 }

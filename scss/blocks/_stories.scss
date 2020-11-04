@@ -8,15 +8,17 @@
     &__elements {
         display: flex;
         justify-content: space-between;
+        padding: 0 30px;
     }
 
     .stories {
         display: flex;
         margin-top: 26px;
+        padding: 0 30px;
         justify-content: space-between;
         
         .story {
-            max-width: 266px;
+            width: 266px;
             height: 446px;
             margin-right: 12px;
             &:last-child {
@@ -56,4 +58,31 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 769px) {
+    .history{
+        .stories {
+            margin-top: 26px;
+            padding: 0 10px;
+            flex-wrap: wrap;
+            .story {
+                margin-right: 0;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 576px) {
+    .history {
+        .stories {
+            flex-wrap: now-wrap;
+            flex-direction: column;
+            align-items: center;
+            .story {
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+    }    
 }

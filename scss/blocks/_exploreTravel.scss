@@ -4,6 +4,7 @@
 
 .explore {
     display: flex;
+    
     padding: 0 100px;
 
     &__info {
@@ -33,7 +34,7 @@
     }
 
     &__img {
-        width: 687px;
+        max-width: 687px;
         height: 654px;
         img {
             width: 100%;
@@ -57,13 +58,12 @@
         padding-left: 31px;
         padding-right: 20px;
         box-sizing: border-box;
+        margin-bottom: 35px;
         option {
             position: absolute;
             margin-left: 30px;
         }
-        &:nth-child(1) {
-            margin-bottom: 35px;
-        }
+        
     }
     &__item:nth-child(odd) {
       margin-right: 30px;  
@@ -82,4 +82,11 @@
     text-align: left;
     margin-bottom: 74px;
 
+}
+
+
+@media screen and (max-width: 768px) {
+    .explore {
+        flex-direction: column;
+    }
 }

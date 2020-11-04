@@ -5,6 +5,7 @@
 .testimonials {
     display: flex;
     justify-content: space-between;
+    padding: 0 30px;
     &__info {
         align-self: center;
     }
@@ -110,4 +111,32 @@
         text-align: left;
 
     }
+}
+
+
+@media screen and (max-width: 769px) {
+    .testimonials {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        flex-direction: column;
+        &__img {
+            margin-top: 40px;
+            margin: 0 5%;
+        }
+    }    
+}
+
+@media screen and (max-width: 576px) {
+    .testimonials {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        flex-direction: column;
+        &__img {
+            margin-top: 40px;
+            margin-right: 0;
+            margin: 0 5%;
+        }
+    }    
 }
